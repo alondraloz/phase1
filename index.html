@@ -1,0 +1,74 @@
+<!-- ALONDRA MARISOL LOZANO -->
+<!-- Final Project Navigation Page -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>alondra final project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="column" id="logo">
+            <div class="row" id="info">:)</div>
+            <svg class="row, brain"> 
+                <a href="00_frontal/index.html"><use id="frontal" href="ZZ_assets/brain.svg#frontal"/></a>
+                <a href="01_occipital/index.html"><use id="occipital" href="ZZ_assets/brain.svg#occipital"/></a>
+                <a href="02_temporal/index.html"><use id="temporal" href="ZZ_assets/brain.svg#temporal"/></a>
+            </svg>
+            <div style="padding:0" class="row" id="welcome">welcome to my brain</div>
+            <div class="row" id="content">alondra marisol</div>
+            <div class="row" id="procrastinate"></div>
+        </div>
+
+        <!-- Blank Full Screen Canvas --> 
+        <canvas width="" height=""></canvas> 
+    <script>
+        let frontal = document.querySelector("#frontal");
+        let occipital = document.querySelector("#occipital");
+        let temporal = document.querySelector("#temporal");
+
+
+        let text = document.querySelector("#info");
+        let content = document.querySelector("#content");
+
+        frontal.addEventListener('mouseover', ()=>{
+            text.textContent = "[frontal lobe] responsible for executive function";
+            content.textContent = "what does planning look like?";
+
+        });
+        frontal.addEventListener('mouseout', ()=>{
+            text.textContent = ":)";
+            content.textContent = "alondra marisol";
+        });
+
+        occipital.addEventListener('mouseover', ()=>{
+            text.textContent = "[occipital lobe] responsible for our sense of sight";
+            content.textContent = "what does the world look like?";
+        });
+        occipital.addEventListener('mouseout', ()=>{
+            text.textContent = ":)";
+            content.textContent = "alondra marisol";
+        });
+
+        temporal.addEventListener('mouseover', ()=>{
+            text.textContent = "[temporal lobe] responsible for our emotions";
+            content.textContent = "what does the world feel like?";
+        });
+        temporal.addEventListener('mouseout', ()=>{
+            text.textContent = ":)";
+            content.textContent = "alondra marisol";
+        });
+
+        // procrastination message after midnight
+        let today = new Date();
+        let hour = today.getHours();
+        let procrastinateMessage = document.querySelector("#procrastinate");  
+        if (hour <=6) {
+            procrastinateMessage.textContent = 'are you procrastinating??? '
+        }
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+/* CSS STYLE SHEET FOR FRONTAL LOBE */ 
+@import url('https://fonts.googleapis.com/css2?family=Galindo&family=Rock+3D&family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+html {-webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sono", monospace;
+    
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -100;
+}
+
+canvas {
+    position: absolute;
+    z-index: 100;
+}
+
+.column{
+    z-index: 5;
+}
+
+.row{ 
+    padding: 2em;
+}
+
+#logo {
+
+}
+
+.brain {
+    display: none;
+    fill:black;
+    width: 207.86px;
+    height: 152.93px; 
+}
+
+.brain:hover {
+
+}
+
+#frontal:hover {
+    fill-opacity: 50% ;
+}
+#occipital:hover {
+    fill-opacity: 50% ;
+}
+#temporal:hover {
+    fill-opacity: 50% ;
+}
